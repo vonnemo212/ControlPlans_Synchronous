@@ -110,7 +110,14 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1702644937792</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="First commit">
+      <option name="closed" value="true" />
+      <created>1702645015410</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1702645015410</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
