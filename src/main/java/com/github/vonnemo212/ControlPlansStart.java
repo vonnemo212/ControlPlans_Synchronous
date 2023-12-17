@@ -4,22 +4,26 @@ import com.ptc.cipjava.jxthrowable;
 import com.ptc.pfc.pfcCommand.*;
 import com.ptc.pfc.pfcCommand.UICommand;
 import com.ptc.pfc.pfcSession.*;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 
-import javax.naming.ldap.Control;
 import javax.swing.*;
-import java.util.logging.Level;
+
 
 public class ControlPlansStart {
 
+    private static final Logger logger = LogManager.getRootLogger();
     public static void start() {
-        Logging.init();
-        Logging.log.log(Level.WARNING, "Test");
+
 
         JOptionPane optionPane = new JOptionPane();
         JDialog dialog = optionPane.createDialog(null,"Debug purposes");
         dialog.setVisible(true);
+        logger.info("Logger test");
+        logger.warn("Test");
+        System.out.println("Test");
+        logger.error("Test");
 
 
 
@@ -32,12 +36,11 @@ public class ControlPlansStart {
             throw new RuntimeException(e);
        }*/
 
-        System.out.println("Test msg");
 
     }
 
     public static void stop() {
-        System.out.println("Program stopped");
+
     }
 
 }

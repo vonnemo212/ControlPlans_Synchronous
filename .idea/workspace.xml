@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ca64eaf-7cb1-4cbd-9da2-d3ae6ea54177" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/vonnemo212/Logging.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protk.dat" beforeDir="false" afterPath="$PROJECT_DIR$/protk.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/vonnemo212/ControlPlansStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/vonnemo212/ControlPlansStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/vonnemo212/Logging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/vonnemo212/Logging.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +50,9 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.ControlPlans_Sync [clean].executor": "Run",
     "Maven.ControlPlans_Sync [compile].executor": "Run",
+    "Maven.ControlPlans_Sync [install].executor": "Run",
     "Maven.ControlPlans_Sync [package].executor": "Run",
+    "Maven.ControlPlans_Sync [validate].executor": "Run",
     "Remote JVM Debug.CPdebug.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -57,10 +61,10 @@
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Administrator/IdeaProjects/ControlPlans_Synchronous",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings"
+    "project.structure.side.proportion": "0.36787975",
+    "settings.editor.selected.configurable": "editor.preferences.gutterIcons"
   }
 }]]></component>
   <component name="RunManager">
@@ -123,11 +127,26 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1702645015410</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="First commit">
+      <option name="closed" value="true" />
+      <created>1702805509112</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702805509112</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
