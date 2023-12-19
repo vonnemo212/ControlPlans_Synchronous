@@ -2,28 +2,33 @@ package com.github.vonnemo212;
 
 import com.ptc.cipjava.jxthrowable;
 import com.ptc.pfc.pfcCommand.*;
-import com.ptc.pfc.pfcCommand.UICommand;
 import com.ptc.pfc.pfcSession.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-
 import javax.swing.*;
 
 
 public class ControlPlansStart {
 
-    private static final Logger logger = LogManager.getRootLogger();
+
+
+    private static Logger logger = null;
+
     public static void start() {
 
 
+        logger = LogManager.getLogger("ControlPlansStart");
         JOptionPane optionPane = new JOptionPane();
         JDialog dialog = optionPane.createDialog(null,"Debug purposes");
         dialog.setVisible(true);
-        logger.info("Logger test");
-        logger.warn("Test");
-        System.out.println("Test");
-        logger.error("Test");
+
+        logger.trace("We've just greeted the user!");
+        logger.debug("We've just greeted the user!");
+        logger.info("We've just greeted the user!");
+        logger.warn("We've just greeted the user!");
+        logger.error("We've just greeted the user!");
+        logger.fatal("We've just greeted the user!");
+
 
 
 

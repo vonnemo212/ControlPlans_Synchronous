@@ -1,4 +1,5 @@
-<configuration status="all">
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="trace">
     <Properties>
         <Property name="layout">%d [%t] %-5level %logger - %m%n</Property>
     </Properties>
@@ -13,12 +14,13 @@
         </File>
     </Appenders>
     <Loggers>
-        <Logger name="ControlPlansStart" level="trace" additivity="true">
-            <AppenderRef ref="LogFile" />
-            <AppenderRef reg="Console" />
-        </Logger>
         <Root level="trace">
-            <AppenderRef ref="LogFile"/>
+            <AppenderRef ref="Console"/>
+            <AppenderRef reg="LogFile" />
         </Root>
+        <Logger name="ControlPlansStart" level="trace" additivity="true">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="LogFile" />
+        </Logger>
     </Loggers>
 </configuration>
