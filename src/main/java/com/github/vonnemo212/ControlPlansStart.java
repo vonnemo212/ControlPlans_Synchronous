@@ -5,6 +5,9 @@ import com.ptc.pfc.pfcCommand.*;
 import com.ptc.pfc.pfcSession.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.core.config.Configuration;
+import org.apache.logging.log4j.core.config.Configurator;
+
 import javax.swing.*;
 
 
@@ -12,23 +15,17 @@ public class ControlPlansStart {
 
 
 
-    private static Logger logger = null;
 
     public static void start() {
 
+        CustomConfigurationFactory config = new CustomConfigurationFactory();
+        config.getConfiguration("testLog",null);
+        Configurator.initialize(config.getConfiguration("testLog",null));
 
-        logger = LogManager.getLogger("ControlPlansStart");
+
         JOptionPane optionPane = new JOptionPane();
         JDialog dialog = optionPane.createDialog(null,"Debug purposes");
         dialog.setVisible(true);
-
-        logger.trace("We've just greeted the user!");
-        logger.debug("We've just greeted the user!");
-        logger.info("We've just greeted the user!");
-        logger.warn("We've just greeted the user!");
-        logger.error("We've just greeted the user!");
-        logger.fatal("We've just greeted the user!");
-
 
 
 
@@ -47,7 +44,6 @@ public class ControlPlansStart {
     public static void stop() {
 
     }
-
 }
 
 class MenuButtonListener extends DefaultUICommandActionListener {
@@ -62,4 +58,5 @@ class MenuButtonListener extends DefaultUICommandActionListener {
             throw new RuntimeException(e);
         }
     }
+
 }
