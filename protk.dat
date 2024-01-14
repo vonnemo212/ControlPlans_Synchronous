@@ -3,7 +3,7 @@ startup          java
 java_app_class   com.github.vonnemo212.ControlPlansStart
 java_app_start   start
 java_app_stop    stop
-java_app_classpath C:\Users\klemenm\Desktop\GitHub\ControlPlans_Sync\target\ControlPlans_Sync-1.0-SNAPSHOT.jar
+java_app_classpath C:\Users\Administrator\IdeaProjects\ControlPlans_Synchronous\target\ControlPlans_Sync-1.0-SNAPSHOT.jar
 allow_stop       true
 delay_start      false       
 end

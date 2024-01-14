@@ -22,7 +22,7 @@ public class CustomConfigurationFactory extends ConfigurationFactory {
         builder.setStatusLevel(Level.ERROR);
 
         AppenderComponentBuilder appenderBuilder = builder.newAppender("log","File");
-        appenderBuilder.addAttribute("fileName","C:\\Users\\klemenm\\Desktop\\log_file\\testlog.log");
+        appenderBuilder.addAttribute("fileName","C:\\Users\\Administrator\\Desktop\\test\\testlog.log");
         builder.add(appenderBuilder);
 
         return builder.build();
